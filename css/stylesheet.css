@@ -85,12 +85,34 @@ body, html{
 
 }
 
+.ptext h1{
+
+    font-size: 24px;
+
+}
+
+.connect a{
+
+    text-decoration: none;
+    color: #eee;
+    padding: 5px 5px;
+    font-size: 24px;
+
+}
+
+.connect a:hover{
+
+    color: #666;
+
+}
+
 .ptext .border{
 
     background-color: #111;
     color: #eee;
     padding: 0;
 }
+
 
 .ptext .border.trans{
 
@@ -108,7 +130,7 @@ footer{
 
 }
 
-footer a{
+footer a.return{
 
     font-size: 128px;
     color: #666;
@@ -119,7 +141,7 @@ footer a{
 
 }
 
-footer a:hover{
+footer a.return:hover{
 
     color: #fff;
 
@@ -139,9 +161,21 @@ footer a:hover{
 
     }
 
+    .ptext h1{
+
+        font-size: 32px;
+    
+    }
+
     .ptext .border{
 
         padding: 20px;
+
+    }
+
+    .connect a{
+
+        font-size: 32px;
 
     }
 
