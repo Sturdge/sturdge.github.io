@@ -121,6 +121,43 @@ body, html{
 
 }
 
+.gridContainer{
+
+    display: grid;
+    grid-gap: 5px;
+
+}
+
+.gridContainer .item{
+
+    border: 1px solid #999;
+    border-radius: 15px;
+    background: #DDD;
+
+}
+
+.item img{
+
+    width: 300px;
+
+}
+
+.button{
+
+    background: #555;
+    color: #DDD;
+    padding: 10px;
+    border: 1px solid #222;
+    border-radius: 7px;
+
+}
+
+.button:hover{
+
+    background: #333;
+
+}
+
 footer{
 
     text-align: center;
@@ -177,6 +214,62 @@ footer a.return:hover{
 
         font-size: 32px;
 
+    }
+
+    .gridContainer{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            ". title ."
+            ". desc ."
+            "box1 box2 box3";
+        float: center;
+    
+    }
+
+    .gridContainer h2{
+
+        grid-area: title;
+
+    }
+
+    .gridContainer p{
+
+        grid-area: desc;
+
+    }
+
+    .gridContainer .item{
+
+        width: 500px;
+        height: 400px;
+        justify-self: center;
+
+    }
+
+    .gridContainer .item1{
+
+        grid-area: box1;
+
+    }
+
+    .gridContainer .item2{
+
+        grid-area: box2;
+
+    }
+
+    .gridContainer .item3{
+
+        grid-area: box3;
+
+    }
+
+    .return{
+
+        display: none;
+    
     }
 
 }
