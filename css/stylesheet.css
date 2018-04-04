@@ -38,14 +38,14 @@ body, html{
 .pimg2{
 
     background-image: url('../img/hardware.jpeg');
-    min-height: 400px;
+    min-height: 150px;
 
 }
 
 .pimg3{
 
     background-image: url('../img/gaming.jpeg');
-    min-height: 400px;
+    min-height: 150px;
 
 }
 
@@ -111,6 +111,16 @@ body, html{
     background-color: #111;
     color: #eee;
     padding: 0;
+
+}
+
+.border{
+
+    background-color: #111;
+    color: #eee;
+    padding: 0;
+    
+
 }
 
 
@@ -121,24 +131,31 @@ body, html{
 
 }
 
-.gridContainer{
+.game.section1{
 
-    display: grid;
-    grid-gap: 5px;
-
-}
-
-.gridContainer .item{
-
-    border: 1px solid #999;
+    background: url('../img/games/yarr/yarr_gameplay2.png');
+    min-height: 200px;
+    min-width: 200px;
     border-radius: 15px;
-    background: #DDD;
+}
+
+.game.section2{
+
+    background: url('../img/games/changi/changi_gameplay.jpg');
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 15px;
 
 }
 
-.item img{
+.game.section1, .game.section2{
 
-    width: 300px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 50px;
 
 }
 
@@ -149,6 +166,7 @@ body, html{
     padding: 10px;
     border: 1px solid #222;
     border-radius: 7px;
+    text-decoration: none;
 
 }
 
@@ -192,6 +210,30 @@ footer a.return:hover{
         background-attachment: fixed;
     }
 
+    .pimg2{
+
+        min-height: 400px;
+    
+    }
+    
+    .pimg3{
+
+        min-height: 400px;
+    
+    }
+
+    .game.section1{
+
+        min-height: 400px;
+    
+    }
+
+    .game.section2{
+
+        min-height: 400px;
+    
+    }
+    
     .ptext{
 
         font-size: 32px;
@@ -213,56 +255,6 @@ footer a.return:hover{
     .connect a{
 
         font-size: 32px;
-
-    }
-
-    .gridContainer{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-            ". title ."
-            ". desc ."
-            "box1 box2 box3";
-        float: center;
-    
-    }
-
-    .gridContainer h2{
-
-        grid-area: title;
-
-    }
-
-    .gridContainer p{
-
-        grid-area: desc;
-
-    }
-
-    .gridContainer .item{
-
-        width: 500px;
-        height: 400px;
-        justify-self: center;
-
-    }
-
-    .gridContainer .item1{
-
-        grid-area: box1;
-
-    }
-
-    .gridContainer .item2{
-
-        grid-area: box2;
-
-    }
-
-    .gridContainer .item3{
-
-        grid-area: box3;
 
     }
 
