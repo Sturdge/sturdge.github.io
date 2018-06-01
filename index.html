@@ -3,9 +3,7 @@
 <html lang="en">
 
     <head>
-
-        <!-- Yeah, don't even think about it. -->
-
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,6 +13,8 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/smoothScroll.js"></script>
         <title>James Sturdgess - Portfolio</title>
 
     </head>
@@ -25,16 +25,9 @@
 
             <div class="ptext">
 
-                <h1><span class="border">
+                <h1><span class="border">James Sturdgess.</span></h1>
 
-                    James Sturdgess.
-
-                </span></h1>
-
-                <span style="font-size: 18px; padding: 1px 4px" class="border">Programmer. Viking. Nerd.</span>
-
-                <br>
-                <br>
+                <p><span style="font-size: 18px; padding: 1px 4px;" class="border">Programmer. Viking. Nerd.</span></p>
 
                 <span class="connect">
 
@@ -42,7 +35,7 @@
                     <a href="https://www.facebook.com/Sturdge" target="_blank" alt="Facebook Link"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.linkedin.com/in/sturdge/" target="_blank" alt="LinkedIn Link"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/Sturdge" target="_blank" alt="Github Link"><i class="fab fa-github"></i></a>
-                    
+                        
                 </span>
 
             </div>
@@ -52,7 +45,6 @@
         <section class="section section-light">
 
             <h2> About Me. </h2>
-
             <p>22 year old ARU Graduate with a 2:1 in Computer Gaming Technology. I also do Viking re-enactment.</p>
 
         </section>
@@ -61,11 +53,7 @@
 
             <div class="ptext">
 
-                <span class="border trans">
-
-                    Skills.
-
-                </span>
+                <span class="border trans">Skills.</span>
 
             </div>
 
@@ -76,6 +64,7 @@
                 <h2> My skillset includes: </h2>
         
                 <ul>
+
                     <li>C# programming</li>
                     <li>C++ programming</li>
                     <li>HTML, CSS and JavaScript</li>
@@ -83,6 +72,7 @@
                     <li>Knowledge of the Unity game engine</li>
                     <li>In-depth knowledge of the Microsoft Office suite</li>
                     <li>The ability to vanquish my foes in battle</li>
+
                 </ul>
         
         </section>
@@ -91,11 +81,7 @@
 
             <div class="ptext">
 
-                <span class="border trans">
-
-                    Projects.
-
-                </span>
+                <span class="border trans">Projects.</span>
 
             </div>
 
@@ -113,11 +99,7 @@
 
                             <div class="ptext">
 
-                                    <span class="border trans">
-                                
-                                        Yarr
-                                        
-                                    </span>
+                                    <span class="border trans">Yarr</span>
 
                             </div>
                         </div>
@@ -130,11 +112,7 @@
     
                             <div class="ptext">
     
-                                    <span class="border trans">
-                                    
-                                        Changi of Plan
-                                            
-                                    </span>
+                                    <span class="border trans">Changi of Plan</span>
     
                             </div>
 
@@ -174,7 +152,7 @@
 
         <footer>
 
-            <a href="#top" class="return"><i class="fas fa-angle-up"></i><p style="font-size: 24px;">Back to top</p></a>
+            <a class="return" id="toTop"><i class="fas fa-angle-up"></i><p style="font-size: 24px;">Back to top</p></a>
 
             <span class="connect">
 

@@ -134,23 +134,20 @@ body, html{
 .game.section1{
 
     background: url('../img/games/yarr/yarr_gameplay2.png');
-    min-height: 200px;
-    min-width: 200px;
-    border-radius: 15px;
 }
 
 .game.section2{
 
     background: url('../img/games/changi/changi_gameplay.jpg');
-    min-height: 200px;
-    min-width: 200px;
-    border-radius: 15px;
 
 }
 
 .game.section1, .game.section2{
 
     position: relative;
+    min-height: 150px;
+    min-width: 150px;
+    border-radius: 15px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
