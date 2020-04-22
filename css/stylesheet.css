@@ -133,16 +133,21 @@ body, html{
 
 .game.section1{
 
-    background: url('../img/games/yarr/yarr_gameplay2.png');
+    background: url('../img/games/foodfeud/foodfeud_banner.png');
 }
 
 .game.section2{
+
+    background: url('../img/games/yarr/yarr_gameplay2.png');
+}
+
+.game.section3{
 
     background: url('../img/games/changi/changi_gameplay.jpg');
 
 }
 
-.game.section1, .game.section2{
+.game.section1, .game.section2, .game.section3{
 
     position: relative;
     min-height: 150px;
