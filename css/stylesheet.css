@@ -282,7 +282,7 @@ footer a.return:hover{
 
 }
 
-@media(min-width: 768px)
+@media(max-width: 768px)
 {
 
     .pimg1, .pimg2, .pimg3, .pimg-project{
@@ -322,6 +322,36 @@ footer a.return:hover{
 
         padding: 20px;
 
+    }
+    
+    .game-list{
+
+        grid-template-columns: 1fr;
+    
+    }
+
+    .project-page{
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .project-properties{
+
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    
+    .project-gallery h2{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .project-gallery{
+
+        grid-template-columns: 1fr;
+        
     }
 
     .connect a{
