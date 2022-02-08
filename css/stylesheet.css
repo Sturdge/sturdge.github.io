@@ -22,10 +22,11 @@ body, html{
 
     position: relative;
     opacity: 0.70;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    min-height: 150px;
 }
 
 .nav a{
@@ -45,14 +46,12 @@ body, html{
 .pimg2{
 
     background-image: url('../img/hardware.jpeg');
-    min-height: 150px;
 
 }
 
 .pimg3{
 
     background-image: url('../img/gaming.jpeg');
-    min-height: 150px;
 
 }
 
@@ -141,7 +140,7 @@ body, html{
 .game-list{
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 50px;
 
 }
@@ -149,22 +148,30 @@ body, html{
 .game.section1{
 
     background: url('../img/games/foodfeud/foodfeud_banner.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .game.section2{
 
     background: url('../img/games/neospace/neospace_banner.png');
+    background-position: center;
+    background-size: cover;
 }
 
 .game.section3{
 
     background: url('../img/games/changi/changi_banner.jpg');
+    background-position: center;
+    background-size: cover;
 
 }
 
 .game.section4{
 
     background: url('../img/games/yarr/yarr_banner.png');
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -172,25 +179,16 @@ body, html{
 
     position: relative;
     min-height: 250px;
-    min-width:250px;
+    min-width: 250px;
     border-radius: 15px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     box-shadow: 5px 5px 20px #000;
-
-}
-
-.project-banner{
-
-    min-height: 250px;
 
 }
 
 .project-page{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     box-shadow: 5px 5px 20px #000;
 
 }
@@ -210,7 +208,7 @@ body, html{
 .project-gallery{
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 25px;
     padding: 50px;
     align-items: center;
@@ -220,10 +218,7 @@ body, html{
 
 }
 
-.project-gallery h2{
-    grid-column-start: 1;
-    grid-column-end: 5;
-}
+
 
 .gallery-item{
     width:100%;
@@ -282,28 +277,22 @@ footer a.return:hover{
 
 }
 
-@media(max-width: 768px)
+@media(min-width: 768px)
 {
 
-    .pimg1, .pimg2, .pimg3, .pimg-project{
+    .pimg1, .pimg2, .pimg3, .game.project-banner{
         
         background-attachment: fixed;
     }
 
-    .pimg2{
-
+    .pimg2, .pimg3{
+        
         min-height: 400px;
-    
-    }
-    
-    .pimg3{
 
-        min-height: 400px;
-    
     }
 
-    .pimg-project{
-        min-height: 200px;
+    .game.project-banner{
+        min-height: 430px;
     }
     
     .ptext{
@@ -326,13 +315,13 @@ footer a.return:hover{
     
     .game-list{
 
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     
     }
 
     .project-page{
 
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
 
     }
 
@@ -345,12 +334,12 @@ footer a.return:hover{
     
     .project-gallery h2{
         grid-column-start: 1;
-        grid-column-end: 1;
+        grid-column-end: 5;
     }
 
     .project-gallery{
 
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
         
     }
 
