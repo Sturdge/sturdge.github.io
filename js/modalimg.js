@@ -17,6 +17,7 @@ $("document").ready(function(){
     function closeModal(){
         $(".modal").css("display", "none");
         $(".return-floating").fadeIn(200);
+        $("html, body").css("overflow", "auto");
     }
 
 });

@@ -1,6 +1,7 @@
 html{
 
     scroll-behavior: smooth;
+    scrollbar-width: none;
 
 }
 
@@ -15,7 +16,10 @@ body, html{
     line-height:1.8em;
     color:#666;
     background-color: #e2e6e9;
+}
 
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .pimg1, .pimg2, .pimg3{
@@ -126,6 +130,13 @@ body, html{
     background-color: transparent;
     text-shadow: 2px 2px #000;
 
+}
+
+.skills-list{
+    margin-left: auto;
+    margin-right:auto;
+    width:300px;
+    text-align: left;
 }
 
 .game-list{

@@ -1,7 +1,11 @@
 $("document").ready(function(){
 
-    $("#toTop").click(function(){
-        const top = $("#top").position().top;
+    const top = $("#top").position().top;
+    const about = $("#about").position().top;
+    const skills = $("#skills").position().top;
+    const projects = $("#projects").position().top;
+
+    $(".toTop").click(function(){
     
         $("html, body").animate({
             scrollTop: top
@@ -9,8 +13,7 @@ $("document").ready(function(){
 
     });
     
-    $("#toAbout").click(function(){
-        const about = $("#about").position().top;
+    $(".toAbout").click(function(){
 
         $("html, body").animate({
             scrollTop: about
@@ -18,8 +21,7 @@ $("document").ready(function(){
 
     })
     
-    $("#toSkills").click(function(){
-        const skills = $("#skills").position().top;
+    $(".toSkills").click(function(){
 
         $("html, body").animate({
             scrollTop: skills
@@ -27,8 +29,7 @@ $("document").ready(function(){
 
     })
 
-    $("#toProjects").click(function(){
-        const projects = $("#projects").position().top;
+    $(".toProjects").click(function(){
 
         $("html, body").animate({
             scrollTop: projects

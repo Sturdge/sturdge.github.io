@@ -16,7 +16,7 @@
         <script src="https://kit.fontawesome.com/6792815408.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="js/smoothScroll.js"></script>
-        <script src="js/returnbutton.js"></script>
+        <script src="js/floatingNav.js"></script>
         <title>James Sturdgess - Portfolio</title>
 
     </head>
@@ -47,23 +47,31 @@
 
                 <span class="nav">
 
-                    <a href="#" alt="About" id="toAbout">About</a>
-                    <a href="#" alt="Skills" id="toSkills">Skills</a>
-                    <a href="#" alt="Projects" id="toProjects">Projects</a>
+                    <a href="#" alt="About" class="toAbout">About</a>
+                    <a href="#" alt="Skills" class="toSkills">Skills</a>
+                    <a href="#" alt="Projects" class="toProjects">Projects</a>
                         
                 </span>
 
             </div>
 
         </div>
-        
-        <a href=#  id="toTop"><span class="return-floating"><i class="fas fa-angle-up"></i></span></a>
-        
+
+        <div class="nav-floating">
+            <nav class="main-nav">
+                <a href=# class="floating-nav-button nav-button-top toAbout"><i class="fa-solid fa-address-card"></i></a>
+                <a href=# class="floating-nav-button toSkills"><i class="fa-solid fa-book"></i></a>
+                <a href=# class="floating-nav-button nav-button-bottom toProjects"><i class="fa-solid fa-laptop-code"></i></a>
+            </nav>
+            
+            <a href=#  class="return-floating floating-nav-button toTop"><i class="fas fa-angle-up"></i></a>
+        </div>
+
         <section class="section section-light" id="about">
 
             <h2> About Me. </h2>
             <p>Hey there! I'm James. A post-graduate with a Master's Degree in games development from Anglia Ruskin University.</p>
-            <p>When I'm not gallavanting around as a Viking, I spend my spare time playing video games or honing my programming skills by working on small-medium scale projects.</p>
+            <p>When I'm not gallavanting around as a Viking, I spend my spare time playing video games, collecting shiny cardboard, and honing my programming skills by working on small-medium scale projects (such as this very site!).</p>
 
         </section>
 
@@ -79,15 +87,15 @@
 
         <section class="section section-dark">
 
-                <h2> My skillset includes: </h2>
-        
-                <ul>
-                    <li>C# programming</li>
-                    <li>HTML, CSS and JavaScript</li>
-                    <li>Knowledge of the Unity game engine</li>
-                    <li>In-depth knowledge of the Microsoft Office suite</li>
-                    <li>The ability to vanquish my foes in battle</li>
-                </ul>
+            <h2> My skillset includes: </h2>
+
+            <ul class="skills-list">
+                <li>C# programming</li>
+                <li>HTML, CSS and JavaScript</li>
+                <li>Knowledge of the Unity game engine</li>
+                <li>In-depth knowledge of the Microsoft Office suite</li>
+                <li>The ability to vanquish my foes in battle</li>
+            </ul>
         
         </section>
 
