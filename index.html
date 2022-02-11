@@ -9,18 +9,19 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="A website dedicated to the portfolio of James Sturdgess.">
         <meta name="keyword" content="James, Sturdgess, James Sturdgess, Portfolio, C#, C++, HTML, CSS, JS, JavaScript, Unity">
-        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/topbutton.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6792815408.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="js/smoothScroll.js"></script>
+        <script src="js/returnbutton.js"></script>
         <title>James Sturdgess - Portfolio</title>
 
     </head>
 
     <body>
-
         <div class="pimg1" id="top">
 
             <div class="ptext">
@@ -46,15 +47,17 @@
 
                 <span class="nav">
 
-                    <a href="#about" alt="About">About</a>
-                    <a href="#skills" alt="Skills">Skills</a>
-                    <a href="#projects" alt="Projects">Projects</a>
+                    <a href="#" alt="About" id="toAbout">About</a>
+                    <a href="#" alt="Skills" id="toSkills">Skills</a>
+                    <a href="#" alt="Projects" id="toProjects">Projects</a>
                         
                 </span>
 
             </div>
 
         </div>
+        
+        <a href=#  id="toTop"><span class="return-floating"><i class="fas fa-angle-up"></i></span></a>
         
         <section class="section section-light" id="about">
 
@@ -64,11 +67,11 @@
 
         </section>
 
-        <div class="pimg2">
+        <div class="pimg2" id="skills">
 
             <div class="ptext">
 
-                <span class="border trans" id="skills">Skills.</span>
+                <span class="border trans">Skills.</span>
 
             </div>
 
@@ -79,13 +82,11 @@
                 <h2> My skillset includes: </h2>
         
                 <ul>
-
                     <li>C# programming</li>
                     <li>HTML, CSS and JavaScript</li>
                     <li>Knowledge of the Unity game engine</li>
                     <li>In-depth knowledge of the Microsoft Office suite</li>
                     <li>The ability to vanquish my foes in battle</li>
-
                 </ul>
         
         </section>
@@ -141,8 +142,6 @@
         </section>
 
         <footer>
-
-            <a class="return" id="toTop"><i class="fas fa-angle-up"></i><p style="font-size: 24px;">Back to top</p></a>
 
             <span class="connect">
 
