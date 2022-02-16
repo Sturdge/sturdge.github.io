@@ -9,10 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="A website dedicated to the portfolio of James Sturdgess.">
         <meta name="keyword" content="James, Sturdgess, James Sturdgess, Portfolio, C#, C++, HTML, CSS, JS, JavaScript, Unity">
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/project.css">
         <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/topbutton.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <script src="https://kit.fontawesome.com/6792815408.js" crossorigin="anonymous"></script>
@@ -41,13 +41,17 @@
         </div>
         
         <section class="project-page">
-            <img src="img/games/neospace/neospace_title.png" class="project-content project-img" >
+            <div class="project-vid-area">
+                <video class="project-content project-vid" autoplay muted loop>
+                    <source src="video/neospace.mp4" type="video/mp4" />
+                </video>
+            </div>
 
             <div class="project-content project-properties">
 
                 <h3 class="project-subheading">Project Info</h3>
 
-                <ul style="list-style-type: none;">
+                <ul class="project-info">
                     <li><span class="info-category">Genre -</span> Infinite Runner</li>
                     <li><span class="info-category">Year -</span> 2020</li>
                     <li><span class="info-category">Engine -</span> Unity</li>
@@ -59,7 +63,7 @@
 
                     <p>Due to the small scope of the project, the project was completed in under 48 hours of work and allowed for the practice of more visually stimulating work without the use of an artist; conjuring up a retro CRT-style display and vapourwave aesthetics.</p>
 
-                    <h3 style="text-align:center">Download</h3>
+                    <h3 class="project-subheading">Download</h3>
 
                     <p>You can download the game <a href="download/NeoSpace.zip">here</a>.</p>
 
@@ -73,10 +77,11 @@
 
             <h2>Gallery</h2>
             
-            <img src="img/games/neospace/neospace_gameplay1.png" class="gallery-item">
-            <img src="img/games/neospace/neospace_gameplay2.png" class="gallery-item">
-            <img src="img/games/neospace/neospace_gameplay3.png" class="gallery-item">
-            <img src="img/games/neospace/neospace_gameplay4.png" class="gallery-item">
+            <img src="img/games/neospace/neospace_title.png" alt="NeoSpace Gameplay - Title Screen" class="gallery-item">
+            <img src="img/games/neospace/neospace_gameplay1.png" alt="NeoSpace Gampelay" class="gallery-item">
+            <img src="img/games/neospace/neospace_gameplay2.png" alt="NeoSpace Gameplay" class="gallery-item">
+            <img src="img/games/neospace/neospace_gameplay3.png" alt="NeoSpace Gameplay" class="gallery-item">
+            <img src="img/games/neospace/neospace_gameplay4.png" alt="NeoSpace Gameplay - Game Over Screen" class="gallery-item">
 
         </section>
 
@@ -97,7 +102,9 @@
 
     <div class="modal">
         <span class="closebtn"><i class="fa-solid fa-xmark"></i></span>
-        <img class="modal-content"">    
+        <img class="modal-content">
+        <p class="modal-caption"></p>
+        <p class="modal-guide">(Click anywhere to close)</p>
     </div>
 
 </html>

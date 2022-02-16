@@ -9,10 +9,10 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="A website dedicated to the portfolio of James Sturdgess.">
         <meta name="keyword" content="James, Sturdgess, James Sturdgess, Portfolio, C#, C++, HTML, CSS, JS, JavaScript, Unity">
-        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/project.css">
         <link rel="stylesheet" href="css/modal.css">
-        <link rel="stylesheet" href="css/topbutton.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/6792815408.js" crossorigin="anonymous"></script>
@@ -47,7 +47,7 @@
 
                 <h3 class="project-subheading">Project Info</h3>
 
-                <ul style="list-style-type: none;">
+                <ul class="project-info">
                     <li><span class="info-category">Genre -</span> Stealth</li>
                     <li><span class="info-category">Year -</span> 2015</li>
                     <li><span class="info-category">Engine -</span> Unity</li>
@@ -56,7 +56,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis rhoncus urna neque viverra justo nec ultrices dui. Ac felis donec et odio pellentesque diam. Tempus quam pellentesque nec nam aliquam sem et. Sit amet cursus sit amet dictum sit amet. Eu ultrices vitae auctor eu. Sem viverra aliquet eget sit. Amet est placerat in egestas. Tristique senectus et netus et malesuada fames. Eu turpis egestas pretium aenean. Viverra justo nec ultrices dui. Ultricies integer quis auctor elit sed. Elementum eu facilisis sed odio morbi quis commodo odio. In pellentesque massa placerat duis ultricies lacus. Cursus eget nunc scelerisque viverra mauris in aliquam sem. Feugiat sed lectus vestibulum mattis. Sed augue lacus viverra vitae congue eu. Malesuada pellentesque elit eget gravida.</p>
                 <p>Posuere ac ut consequat semper viverra nam libero. Vulputate dignissim suspendisse in est ante in nibh. Sem viverra aliquet eget sit amet tellus cras adipiscing enim. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Dui ut ornare lectus sit amet est. Sociis natoque penatibus et magnis. Eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Quam vulputate dignissim suspendisse in est. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vestibulum rhoncus est pellentesque elit ullamcorper. Nibh tellus molestie nunc non blandit massa enim.</p>
 
-                <h3 style="text-align:center">Download</h3>
+                <h3 class="project-subheading">Download</h3>
 
                 <p>You can download the .exe <a href=#>here</a>.</p>
                 <p>You can view the source <a href=#>here</a>.</p>
@@ -69,12 +69,12 @@
 
             <h2>Gallery</h2>
             
-            <img src="img/games/changi/changi_gameplay.jpg" class="gallery-item">
-            <img src="img/games/changi/changi_gameplay2.jpg" class="gallery-item">
-            <img src="img/games/changi/changi_dev1.jpg" class="gallery-item">
-            <img src="img/games/changi/changi_dev2.jpg" class="gallery-item">
-            <img src="img/games/changi/changi_dev3.jpg" class="gallery-item">
-            <img src="img/games/changi/changi_dev4.jpg" class="gallery-item">
+            <img src="img/games/changi/changi_gameplay.jpg" alt="Changi of Plans Gameplay - Prison Yard" class="gallery-item">
+            <img src="img/games/changi/changi_gameplay2.jpg" alt="Changi of Plans Gameplay - Prison Building" class="gallery-item">
+            <img src="img/games/changi/changi_dev1.jpg" alt="Changi of Plans Development - Prison Yard" class="gallery-item">
+            <img src="img/games/changi/changi_dev2.jpg" alt="Changi of Plans Development - Skybox Test 1" class="gallery-item">
+            <img src="img/games/changi/changi_dev3.jpg" alt="Changi of Plans Gameplay - Skybox Test 2" class="gallery-item">
+            <img src="img/games/changi/changi_dev4.jpg" alt="Changi of Plans Development - Lighting Test" class="gallery-item">
 
         </section>
 
@@ -95,7 +95,9 @@
 
     <div class="modal">
         <span class="closebtn"><i class="fa-solid fa-xmark"></i></span>
-        <img class="modal-content"">    
+        <img class="modal-content">
+        <p class="modal-caption"></p>
+        <p class="modal-guide">(Click anywhere to close)</p>
     </div>
 
 </html>

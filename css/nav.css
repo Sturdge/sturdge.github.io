@@ -1,0 +1,70 @@
+.main-nav, .return-floating{
+    position: fixed;
+    box-shadow: 5px 5px 10px #333;
+    background-color: #666;
+    color: #EEE;
+    right: 10px;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1;
+    display: none;
+}
+
+.main-nav{
+    width: 56px;
+    height: 183px;
+    bottom: 75px;
+    border-radius: 25px;
+}
+
+.floating-nav-button{
+    display: block;
+}
+
+.floating-nav-button i{
+    margin-top: 35%;
+    margin-bottom: 30%;
+}
+
+.nav-button-top{
+    border-bottom: 1px solid #EEE;
+}
+.nav-button-bottom{
+    border-top: 1px solid #EEE;
+}
+
+.return-floating{
+    display: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    bottom: 10px;
+    border-radius: 50%;
+}
+
+.return-floating i{
+    margin-top: 30%;
+}
+
+.floating-nav-button:visited{
+    color: #EEE;
+}
+
+.floating-nav-button:hover{
+    color: #333;
+}
+
+@media(min-width: 768px)
+{
+    .main-nav, .return-floating{
+        right: 25px;
+    }
+
+    .main-nav{
+        bottom: 100px;
+    }
+
+    .return-floating{
+        bottom: 25px;
+    }
+}

@@ -8,6 +8,7 @@
     background-size: cover;
     min-height: 200px;
 }
+
 .project-page{
 
     display: grid;
@@ -34,12 +35,27 @@
     color: #eee;
 }
 
+.project-vid{
+    width: 100%;
+}
+
+.project-vid-area{
+    background-color: #282e34;
+    margin: auto;
+    padding: 50px 0;
+
+}
+
 .project-properties{
     margin: auto;
 }
 
 .project-properties ul{
     padding-left: 0;
+}
+
+ul.project-info{
+    list-style-type: none;
 }
 
 .project-content{
@@ -99,9 +115,18 @@
 
     }
     
-    .project-gallery h2{
+    .project-vid-area{
+        background-color:#e2e6e9;
+    }
+
+    .project-vid{
+        min-height: 500px;
+    }
+    
+    .project-gallery h2, .project-gallery h3{
         grid-column-start: 1;
         grid-column-end: 5;
+        margin: auto;
     }
 
     .project-gallery{

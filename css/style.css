@@ -1,0 +1,244 @@
+html{
+
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+body, html{
+
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height:1.8em;
+    color:#666;
+    background-color: #e2e6e9;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.main-subtitle{
+    font-size: 18px;
+    padding: 1px 4px;
+}
+
+.pimg1, .pimg2, .pimg3{
+
+    position: relative;
+    opacity: 0.70;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+}
+
+.nav a{
+    color:#eee;
+    text-decoration: none;
+    text-shadow: 2px 2px #000;
+    padding: 10px;
+}
+
+.pimg1{
+
+    background-image: url('../img/coding.png');
+    min-height: 100%;
+
+}
+
+.pimg2{
+
+    background-image: url('../img/hardware.jpeg');
+
+}
+
+.pimg3{
+
+    background-image: url('../img/gaming.jpeg');
+
+}
+
+.section{
+
+    text-align: center;
+    padding: 50px 80px;
+    box-shadow: 5px 5px 20px #000;
+
+}
+
+.section-light{
+
+    background-color: #e2e6e9;
+    color: #666;
+
+}
+
+.section-dark{
+
+    background-color: #282e34;
+    color: #ddd;
+    box-shadow: 0px 15px 20px #000;
+
+}
+
+.ptext{
+
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.ptext h1{
+
+    font-size: 24px;
+
+}
+
+.connect a{
+
+    text-decoration: none;
+    color: #eee;
+    padding: 5px 5px;
+    font-size: 24px;
+
+}
+
+.connect a:hover{
+
+    color: #666;
+
+}
+
+.ptext .border{
+
+    background-color: #111;
+    color: #eee;
+    padding: 20px;
+
+}
+
+
+.ptext .border.trans{
+
+    background-color: transparent;
+    text-shadow: 2px 2px #000;
+
+}
+
+.skills-list{
+    margin-left: auto;
+    margin-right:auto;
+    width:300px;
+    text-align: left;
+}
+
+.game-list{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+
+}
+
+.section1{
+
+    background: url('../img/games/foodfeud/foodfeud_banner.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.section2{
+
+    background: url('../img/games/neospace/neospace_banner.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.section3{
+
+    background: url('../img/games/changi/changi_banner.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.section4{
+
+    background: url('../img/games/yarr/yarr_banner.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.tile{
+
+    position: relative;
+    min-height: 250px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #000;
+
+}
+
+footer{
+
+    text-align: center;
+    background-color: #111111;
+    padding: 50px 80px;
+    font-size: 24px;
+
+}
+
+@media(min-width: 768px){
+
+    .pimg1, .pimg2, .pimg3{
+        
+        background-attachment: fixed;
+    }
+
+    .pimg2, .pimg3{
+        
+        min-height: 300px;
+
+    }
+    
+    .ptext{
+
+        font-size: 32px;
+
+    }
+
+    .ptext h1{
+
+        font-size: 32px;
+    
+    }
+    
+    .game-list{
+
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    .connect a{
+
+        font-size: 32px;
+
+    }
+
+    .return-floating{
+        right: 25px;
+        bottom: 25px;
+    }
+}

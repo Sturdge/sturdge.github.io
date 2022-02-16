@@ -9,12 +9,22 @@
     background-color: rgba(0,0,0,0.9);
 }
 
+.modal-guide{
+    text-align: center;
+    font-size: 16px;
+}
+
 .modal-content{
     margin: auto;
     padding-top: 50%;
     display: block;
     width: 100%;
     max-width: 1000px;
+}
+
+.modal-caption{
+    text-align: center;
+    font-size: 28px;
 }
 
 .closebtn{
