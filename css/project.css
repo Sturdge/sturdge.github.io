@@ -71,7 +71,6 @@ ul.project-info{
     grid-template-columns: 1fr;
     grid-gap: 25px;
     padding: 50px;
-    align-items: center;
     background-color: #282e34;
     color: #ddd;
     text-align: center;
