@@ -19,7 +19,7 @@
     padding-top: 50%;
     display: block;
     width: 100%;
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 .modal-caption{
@@ -42,9 +42,10 @@
     cursor: pointer;
 }
 
-@media(min-width: 768px)
+@media(min-width: 1280px)
 {
     .modal-content{
-        padding-top: 10%;
+        padding-top: 7%;
+        max-width: 1024px;
     }
 }

@@ -65,6 +65,10 @@ ul.project-info{
     margin: auto;
 }
 
+.gallery-subheading{
+    font-weight: normal;
+}
+
 .project-gallery{
 
     display: grid;
@@ -101,7 +105,7 @@ ul.project-info{
     font-weight: bold;
 }
 
-@media(min-width: 768px){
+@media(min-width: 1280px){
 
     .project-banner{
         background-attachment: fixed;
