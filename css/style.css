@@ -183,6 +183,14 @@ body::-webkit-scrollbar{
 
 }
 
+.section5{
+
+    background: url('../img/games/adnw/gameplay4.png');
+    background-position: center;
+    background-size: cover;
+
+}
+
 .tile{
 
     position: relative;
